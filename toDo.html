@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="toDo.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">📎  Todo List  </h1>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="inpNewTask" class="form-label">New Task</label>
+                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter the name of the task">
+                    <div id="newTaskhelp" class="form-text">A short one line description of your task</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <button class="btn btn-success col m-2" disabled id="btnAdd">
+                        Add
+                    </button>
+                    
+                    <button class="btn btn-danger col m-2" disabled id="btnClear">
+                        Clear
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-info col m-2" id="btnSort">
+                        Sort
+                    </button>
+                    
+                    <button class="btn btn-warning col m-2" id="btnCleanup">
+                        CleanUP
+                    </button>
+                </div>
+            </div>
+
+        <ul class="row list-group m-2" id="ulTasks">
+            
+        </ul>
+
+        <script defer src="toDo.js"></script>
+    </div>
+    
+    
+</body>
+</html>
